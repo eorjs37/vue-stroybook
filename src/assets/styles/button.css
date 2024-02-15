@@ -1,0 +1,19 @@
+.common_btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.primary {
+  background-color: var(--blue);
+}
+
+.warning {
+  background-color: var(--warning);
+}
+
+.danger {
+  background-color: var(--danger);
+}
