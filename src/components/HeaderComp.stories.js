@@ -9,19 +9,13 @@ export default {
 
   argTypes: {
     logisStatus: false
-  },
+  }
 }
 
-
-export const Default = (arg, { argTypes }) => ({
+export const Default = (_, { argTypes }) => ({
   components: { HeaderComp },
   props: Object.keys(argTypes),
   template: `
     <header-comp/>
-  `,
-
-  mounted() {
-    console.log(argTypes);
-  },
-
+  `
 })

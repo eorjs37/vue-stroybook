@@ -7,38 +7,25 @@ export default {
   tags: ['autodocs'],
   component: ButtonComp,
   argTypes: {
-    onPinTask: () => {
-    },
-    onArchiveTask: () => { },
-  },
-
-}
-
-export const Default = {
-  argTypes: {
-    btnname: 'DD'
+    btnname: {
+      control: 'text',
+      description: 'Overwritten description'
+    }
   }
 }
 
-// export const Default = () => ({
-//   components: { ButtonComp },
-//   template: `
-//     <button-comp btnname="Default"/>
-//   `,
+export const Default = {}
 
+export const Danger = {
+  args: {
+    btnname: '위험',
+    color: 'danger'
+  }
+}
 
-// })
-
-// export const Warning = () => ({
-//   components: { ButtonComp },
-//   template: `
-//     <button-comp color="warning" btnname="경고"/>
-//   `
-// })
-
-// export const Danger = () => ({
-//   components: { ButtonComp },
-//   template: `
-//     <button-comp color="danger" btnname="경고"/>
-//   `
-// })
+export const Warning = {
+  args: {
+    btnname: '경고',
+    color: 'warning'
+  }
+}
