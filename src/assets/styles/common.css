@@ -3,3 +3,32 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.cursor {
+  cursor: pointer;
+}
+
+.vertical_center {
+  display: flex;
+  align-items: center;
+}
+
+.loginbtn {
+  border: none;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 10px 10px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.loginbtn.logout {
+  background-color: var(--828282);
+}
+
+/*################# storybook #################*/
+.sb-show-main.sb-main-padded {
+  margin: 0;
+  padding: 0;
+}
