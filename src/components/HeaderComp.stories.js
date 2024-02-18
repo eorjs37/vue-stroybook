@@ -5,22 +5,23 @@ import HeaderComp from '@/components/HeaderComp.vue'
 
 export default {
   title: '헤더',
-  component: HeaderComp
+  component: HeaderComp,
+
+  argTypes: {
+    logisStatus: false
+  },
 }
 
 
-export const Default = () => ({
+export const Default = (arg, { argTypes }) => ({
   components: { HeaderComp },
+  props: Object.keys(argTypes),
   template: `
     <header-comp/>
   `,
-  methods: {
-    customMethod() {
-      console.log('Custom method called from Storybook');
-    }
-  },
+
   mounted() {
-    console.log("!");
-  }
+    console.log(argTypes);
+  },
 
 })

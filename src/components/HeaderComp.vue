@@ -17,7 +17,13 @@
 <script>
 export default {
   name: 'BookHeaderComp',
-
+  props: {
+    logisStatus: {
+      type: Boolean,
+      default: false,
+      required: false
+    }
+  },
   data() {
     return {
       isLogin: false
@@ -28,11 +34,7 @@ export default {
 
   methods: {
     customMethod() {
-      setTimeout(() => {
-        return new Promise((resolve) => {
-          resolve("success")
-        })
-      }, 2000);
+
     }
   }
 }
